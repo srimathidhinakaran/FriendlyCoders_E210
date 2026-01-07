@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">AI</div>
+        <div class="header-text">
+          <h1>AI Assistant</h1>
+          <p>Ready to help</p>
+        </div>
+        <div class="status">
+          <span class="status-dot"></span>
+          <span>Online</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat Area -->
+    <main class="chat-area" id="chat-area">
+      <!-- Welcome Message -->
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon">?</div>
+        <h2>How can I help you today?</h2>
+        <p>Ask me anything or try one of these examples:</p>
+        <div class="quick-actions">
+          <button class="quick-action" data-prompt="Explain quantum computing simply">
+            Explain quantum computing
+          </button>
+          <button class="quick-action" data-prompt="Write a short poem about technology">
+            Write a poem
+          </button>
+          <button class="quick-action" data-prompt="What are the benefits of exercise?">
+            Exercise benefits
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages will be inserted here -->
+    </main>
+
+    <!-- Typing Indicator -->
+    <div class="typing" id="typing">
+      <div class="typing-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span>Thinking...</span>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <form class="input-form" id="chat-form">
+        <div class="input-wrapper">
+          <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required>
+          <div class="input-icon">↩</div>
+        </div>
+        <button type="submit" class="send-btn" aria-label="Send message">
+          →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

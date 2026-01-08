@@ -1,4 +1,4 @@
-// DOM Elements
+// / DOM Elements
 const chatArea = document.getElementById('chat-area');
 const chatForm = document.getElementById('chat-form');
 const userInput = document.getElementById('user-input');
@@ -6,7 +6,7 @@ const typingIndicator = document.getElementById('typing');
 const welcome = document.getElementById('welcome');
 
 // Configuration
-const API_KEY = "AIzaSyC7InS1_kGyy54sJgW_tMdW3GEuclBL0OM";
+const API_KEY = "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";
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
 
 // Conversation history
